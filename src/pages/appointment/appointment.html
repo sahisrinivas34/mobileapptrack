@@ -1,0 +1,18 @@
+
+<ion-card *ngFor="let item of items">
+  <ion-card-header>
+    {{item.doc.name}} 
+  </ion-card-header>
+  <ion-card-content>
+    {{item.doc.city}} 
+    {{item.doc.status}}
+    {{item.doc.contact}}
+    {{item.doc.status}}
+    {{item.doc.assign}}
+  </ion-card-content>
+  <button ion-button round color ="danger" (click)="deleteap(item.doc._id)">Delete</button>
+</ion-card>
+
+<ion-fab right bottom>
+    <button ion-fab color="light" (click)="createAppointment()"><ion-icon name="md-add"></ion-icon></button>
+    </ion-fab>

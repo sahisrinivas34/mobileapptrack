@@ -1,0 +1,11 @@
+
+<ion-navbar>
+  <ion-title>SignUp</ion-title>
+</ion-navbar>
+<ion-input placeholder="name" name="name" [(ngModel)]="name" required type="text"></ion-input>
+<ion-input placeholder="city" type="text" name="city" required  [(ngModel)]="city"></ion-input>
+<ion-input placeholder="phone"  type="text" name="phone" required [(ngModel)]="phone"></ion-input>
+<ion-input placeholder="email"  type="email" name="email" required[(ngModel)]="email"></ion-input>
+<ion-input placeholder="password" type="password" name="password" required [(ngModel)]="password"></ion-input>
+<ion-input placeholder="password" type="password" name="passwordtwo" required [(ngModel)]="passwordtwo" ></ion-input>
+<button ion-button  type="submit" (click)="signUp()" >SignUp</button>

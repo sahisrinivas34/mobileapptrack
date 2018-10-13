@@ -1,0 +1,14 @@
+
+<ion-content padding class="background">
+  <ion-card-header>
+    <ion-icon  md="md-person"></ion-icon>
+</ion-card-header><br>
+  <ion-item>
+    <ion-input placeholder="UserName" name="uname"  required [(ngModel)]="uname"></ion-input>
+    </ion-item><br>
+    <ion-item>
+<ion-input placeholder="password" name="pwd"  type="password" required [(ngModel)]="password"></ion-input>
+</ion-item><br>
+<button ion-button type="submit" color="light" round (click)="onSignIn()" >SignIn</button>
+<button ion-button color="light" round (click)="onSignUp()">Sign Up</button>
+</ion-content>
